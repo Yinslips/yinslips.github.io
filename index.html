@@ -25,6 +25,10 @@
     h1 {
       text-align: center;
       color: #b98522;
+      font-family: "DFKai-SB", "STKaiti", "MingLiU", "PMingLiU", serif;
+      font-weight: 700;
+      font-size: 2.5rem;
+      letter-spacing: 0.05em;
     }
 
     h3 {
@@ -44,34 +48,42 @@ h5 {
     #main-nav {
       list-style: none;
       padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 1rem;
-      flex-wrap: wrap;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.35rem;
+      max-width: 420px;
     }
 
     #main-nav li {
-      display: inline;
+      display: block;
     }
 
     #main-nav a {
       text-decoration: underline;
       color: #250ce1;
+      font-size: 0.92rem;
       padding: 6px 10px;
       border-radius: 4px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      line-height: 1;
+      display: block;
+      text-align: center;
+      line-height: 1.2;
     }
 
     #main-nav a:hover {
       background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    @media (max-width: 520px) {
+      #main-nav {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+      }
+
+      #main-nav a {
+        font-size: 0.88rem;
+        padding: 10px 12px;
+      }
     }
 
 table{
@@ -117,7 +129,14 @@ width: 420px;
 <div><img src="choi_2.png" alt=""> </div><hr>
 <div><img src="choi_3.png" alt=""> </div><hr>
 <div><img src="CHOI_4.png" alt=""> </div><hr>
+<div><img src="b13.png" alt=""> </div><hr>
+<div><img src="b12.png" alt=""> </div><hr>
+<div><img src="b16.png" alt=""> </div><hr>
+<div><img src="b14.png" alt=""> </div><hr>
+<div><img src="b18.png" alt=""> </div><hr>
+<div><img src="b17.png" alt=""> </div><hr>
 <div><img src="b1.png" alt=""> </div><hr>
+<div><img src="b11.png" alt=""> </div><hr>
 <div><img src="b2.png" alt=""> </div><hr>
 <div><img src="b3.png" alt=""> </div><hr>
 <div><img src="b4.png" alt=""> </div><hr>
@@ -127,7 +146,7 @@ width: 420px;
 <div><img src="b8.png" alt=""> </div><hr>
 <div><img src="b9.png" alt=""> </div><hr>
 <div><img src="b10.png" alt=""> </div><hr>
-<div><img src="b11.png" alt=""> </div><hr>
+
 <hr>
 <br><br><br><br><br><br>
 <br><h4>會員集體創作 : 新歲喜言寄厚情!</h4>
